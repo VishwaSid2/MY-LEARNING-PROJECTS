@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Press Start 2P";
+  background-color: #222;
+  color: #fff;
+}
+body {
+  height: 100vh;
+}
+/* utility Classes */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+header {
+  padding: 2rem;
+  color: #fff;
+}
+header a,
+.left a {
+  transition: all 0.15s ease-in-out;
+  font-size: 2.2rem;
+  color: white;
+  text-decoration: none;
+  background-color: #000;
+  filter: invert(100%);
+  padding: 2rem;
+  padding-left: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+header a:active,
+.left a:active {
+  filter: invert(0%);
+}
+header p {
+  font-size: 1.75rem;
+  align-self: flex-start;
+}
+.title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 5.5rem;
+  border-bottom: 0.7rem solid #fff;
+}
+.title h1 {
+  font-size: 4rem;
+  margin-bottom: 12.5rem;
+  padding-left: 0.5rem;
+}
+.title h1 + div {
+  display: inline-flex;
+}
+.hide {
+  position: absolute;
+  padding: 3rem 5rem;
+  color: #000;
+  top: 100%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 6rem;
+  background-color: #fff;
+}
+section {
+  width: 85%;
+  margin: 1rem auto;
+  padding-top: 4rem;
+}
+section .flex {
+  flex-wrap: nowrap !important;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+.left,
+.right {
+  flex: 1;
+}
+.left input {
+  outline: none;
+  border: 0.15rem solid #fff;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  background-color: #000;
+  font-size: 30px;
+  max-width: 35%;
+  margin-bottom: 5rem;
+  font-family: inherit;
+}
+.right {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right h3 {
+  font-size: 2rem;
+  justify-self: flex-start;
+  margin-bottom: 5rem;
+}
+.right p {
+  justify-self: center;
+  font-size: 2.5rem;
+}
+.right h3 ~ p {
+  padding-bottom: 4.25rem;
+}
+.again {
+  animation: infinite linear 2s;
+}
+.message{
+  padding-left:10px;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    color: rgb(255, 255, 255);
+  }
+
+  50% {
+    color: blueviolet;
+    transform: scale(1.2);
+  }
+}
